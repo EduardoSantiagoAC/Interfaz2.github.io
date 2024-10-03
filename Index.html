@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Vinculación de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="diseñoMenú.css">
+
+    <title>Rutas a explorar</title>
+
+    <style>
+        /* Estilo para el cuerpo del documento */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Estilo para el encabezado y la barra de navegación */
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        /* Estilo para los elementos de la lista del menú de navegación */
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para los iconos de Font Awesome */
+        nav ul li a i {
+            margin-right: 5px;
+        }
+
+        /* Estilo para la caja de búsqueda centrada */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+        }
+
+        .search-container input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+
+        .search-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .search-container button:hover {
+            background-color: #555;
+        }
+
+        /* Estilo para la imagen centrada */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 0px; /* Reducir el margen superior */
+        }
+
+        /* Ajustar el tamaño de la imagen */
+        .image-container img {
+            width: 900px; /* Ancho de la imagen ajustado */
+            height: 500px; /* Altura de la imagen ajustada */
+            object-fit: cover; /* Mantiene la imagen centrada y ajustada sin distorsión */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Rupsedi</h1>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="https://www.google.com.mx/maps/preview">Google Maps</a></li>
+                <li><a href="#">
+                        <i class="fas fa-route"></i> Publicar ruta
+                    </a></li>
+                <li><a href="#">
+                        <i class="fa-solid fa-folder"></i> Rutas favoritas
+                    </a></li>
+                <li><a href="#">
+                        <i class="fas fa-star"></i> Sugerencias del día
+                    </a></li>
+                <li><a href="#">
+                        <i class="fas fa-map-marker-alt"></i> Zona actual
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor para la caja de búsqueda -->
+    <div class="search-container">
+        <input type="text" placeholder="Buscar rutas..." />
+        <button type="button">Buscar</button>
+    </div>
+
+    <!-- Contenedor para la imagen centrada -->
+    <div class="image-container">
+        <img src="maps.png" alt="Descripción de la imagen" />
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
